@@ -1,0 +1,118 @@
+
+body, html {
+  height: 100%;
+}
+div {
+    border-color: coral;}
+.bg-img {
+  /* The image used */
+  background-image: url("God.jpg");
+
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+div > ul{
+    list-style: none;
+    ;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+ul li{
+    float: left;
+}
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-transform: capitalize;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+ul > li:first-child{
+    background-color: orange;
+}
+p > ul{
+    text-align: justify;
+    color: white;
+    background-color: black;
+}
+div > img{
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px;
+    width: 159px;
+    display: block;
+}
+div > img:hover{
+    box-shadow: 0 0 2px 1px rgba(0 140 186 0.5);
+}
+container{
+    display: flex;
+}
+.flex:hover{
+    background-color:red;
+    width: 150px;
+    scale: 0.5;
+}
+@keyframes James{
+    from {rotate: 0deg;
+    transform: rotate(0deg);
+    background-image:url("God.jpg")}
+    to {
+       rotate: 0deg;
+       transform: rotate(360deg);
+        background-color:url("Web Dev.png")}
+}
+.container{
+    animation-name: James;
+    animation-duration: 5s;
+    rotate: 90;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in;
+}
